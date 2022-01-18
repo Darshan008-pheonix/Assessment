@@ -1,5 +1,5 @@
-FROM openjdk:8
-EXPOSE 9091
+FROM openjdk:1.8
+EXPOSE 8080
 ADD target/Employee_db-0.0.1-SNAPSHOT.jar Employee_db-0.0.1-SNAPSHOT.jar
 ENTRYPOINT ["java","-jar","Employee_db-0.0.1-SNAPSHOT.jar"]
  
